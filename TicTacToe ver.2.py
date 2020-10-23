@@ -67,8 +67,8 @@ class Computer:
                             number_of_computer += 1
                     if number_of_player == 2:
                         self.board.weight[y][x] += 5
-                    elif number_of_player == 2:
-                        self.board.weight[y][x] += 5
+                    elif number_of_computer == 2:
+                        self.board.weight[y][x] += 10
                     # 縦方向
                     number_of_player = 0
                     number_of_computer = 0
@@ -81,8 +81,8 @@ class Computer:
                             number_of_computer += 1
                     if number_of_player == 2:
                         self.board.weight[y][x] += 5
-                    elif number_of_player == 2:
-                        self.board.weight[y][x] += 5
+                    elif number_of_computer == 2:
+                        self.board.weight[y][x] += 10
 
                     if (y == 0 and x == 0) or (y == 2 and x == 0):
                         number_of_player = 0
@@ -96,8 +96,8 @@ class Computer:
                                 number_of_computer += 1
                         if number_of_player == 2:
                             self.board.weight[y][x] += 5
-                        elif number_of_player == 2:
-                            self.board.weight[y][x] += 5
+                        elif number_of_computer == 2:
+                            self.board.weight[y][x] += 10
                     elif (y == 2 and x == 0) or (y == 0 and x == 2):
                         number_of_player = 0
                         number_of_computer = 0
@@ -110,8 +110,8 @@ class Computer:
                                 number_of_computer += 1
                         if number_of_player == 2:
                             self.board.weight[y][x] += 5
-                        elif number_of_player == 2:
-                            self.board.weight[y][x] += 5
+                        elif number_of_computer == 2:
+                            self.board.weight[y][x] += 10
 
         # 最大インデックス選択
         self.max_index = sum(self.board.weight, []).index(
